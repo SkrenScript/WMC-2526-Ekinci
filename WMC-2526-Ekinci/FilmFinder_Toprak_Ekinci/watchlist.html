@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist - Film-Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Film-Finder</h1>
+        <p>Projekt von Toprak Ekinci</p>
+        <nav>
+            <a href="index.html">Suche</a>
+            <a class="active" href="watchlist.html">Watchlist</a>
+            <a href="info.html">Info</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Meine Watchlist</h2>
+            <p>Hier kannst du Titel speichern, ersetzen und loeschen.</p>
+        </section>
+
+        <section class="controls">
+            <input id="titelInput" type="text" placeholder="Titel eintragen">
+            <button id="hinzufuegenButton">Hinzufuegen</button>
+            <button id="ersetzenButton">Ersten Titel ersetzen</button>
+            <button id="alleLoeschenButton">Alle loeschen</button>
+        </section>
+
+        <section id="watchlistMeldung" class="message"></section>
+        <ul id="watchlist" class="simple-list"></ul>
+    </main>
+
+    <footer>
+        <p>Credit: Toprak Ekinci</p>
+    </footer>
+
+    <script src="watchlist.js"></script>
+</body>
+</html>

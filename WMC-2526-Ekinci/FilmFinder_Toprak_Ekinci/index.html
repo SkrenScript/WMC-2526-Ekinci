@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film-Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Film-Finder</h1>
+        <p>Projekt von Toprak Ekinci</p>
+        <nav>
+            <a class="active" href="index.html">Suche</a>
+            <a href="watchlist.html">Watchlist</a>
+            <a href="info.html">Info</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Serien und Filme suchen</h2>
+            <p>Gib einen Titel ein und lade passende Ergebnisse aus einer kostenlosen API.</p>
+        </section>
+
+        <section class="controls">
+            <input id="suchfeld" type="text" placeholder="z.B. Friends, Batman, Dark">
+            <button id="suchenButton">Suchen</button>
+            <button id="beispieleButton">Beispiele laden</button>
+            <button id="loeschenButton">Loeschen</button>
+        </section>
+
+        <section id="meldung" class="message"></section>
+        <section id="filmListe" class="grid"></section>
+    </main>
+
+    <footer>
+        <p>Credit: Toprak Ekinci</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
